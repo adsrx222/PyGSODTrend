@@ -54,8 +54,22 @@ Analyzing trend for MIN...
 All trend maps generated.
 ```
 
+### Screenshot Example
+
+Here’s an example run of PyGSODTrend CLI in Google Colab Notebook:
+
+![CLI Example](assets/colab_example.png)
+
+---
+
+## Example Results
+
+The tool generates geographic scatter plots under the `results/` folder.  
+Here’s a sample **Minimum Temperature (MIN) Trend Map**:
+
+![MIN Trend Map](assets/trend_map_min.png)
+
 ---
 
 ## License
-This project is licensed under the MIT License.  
-Feel free to use, modify, and distribute.
+This project is licensed under the MIT License.
