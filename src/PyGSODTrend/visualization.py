@@ -47,9 +47,6 @@ def create_scatter(df, filename, lat_col='LATITUDE', lon_col='LONGITUDE', value_
     ax.add_feature(cfeature.COASTLINE, linewidth=0.8, zorder=1)
     ax.add_feature(cfeature.LAND, facecolor='lightgray', zorder=0)
 
-    # Plot the data points, colored by the value_col (SLOPE)
-    # The 'c' argument takes the array of values for coloring
-    # The 'cmap' defines the colormap
     scatter = ax.scatter(lons, lats,
                          c=values,
                          cmap='coolwarm',
@@ -72,7 +69,7 @@ def create_scatter(df, filename, lat_col='LATITUDE', lon_col='LONGITUDE', value_
         case "MIN":
             cbar.set_label(f'MIN Trend (°F/day)', fontsize=12)
 
-    # Add gridlines and labels
+    #add gridlines and labels
     gl = ax.gridlines(crs=ccrs.PlateCarree(), draw_labels=True,
                       linewidth=1, color='gray', alpha=0.5, linestyle='--')
     gl.top_labels = False
