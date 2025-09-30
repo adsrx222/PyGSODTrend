@@ -1,0 +1,22 @@
+# Virtual environments
+venv/
+venv-test/
+
+# VSCode settings
+.vscode/
+
+# Build / distribution directories
+dist/
+
+# Output results
+/src/resources/
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Other Python-specific ignores
+*.egg-info/
+.eggs/
+build/
